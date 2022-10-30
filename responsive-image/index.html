@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends responsive image</title>
+</head>
+<body>
+  <img 
+    alt="Let's take a break" 
+    srcset="friends_small.png 500w, 
+            friends_medium.png 800w, 
+            friends_large.png 1369w" 
+    sizes="(max-width: 800px) 50vw, 100vw"
+    loading="lazy"
+  /> 
+
+  <style>
+    img {
+      display: block;
+      
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</body>
+</html>
